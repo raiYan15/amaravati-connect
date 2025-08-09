@@ -159,13 +159,24 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container py-12 md:py-16">
+        <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <Link to="/login"><Button variant="secondary">Login / Signup</Button></Link>
+          <Link to="/dashboard/farmer"><Button>Farmer Dashboard</Button></Link>
+          <Link to="/recommendations/crops"><Button variant="outline">Crop Recommendations</Button></Link>
+          <Link to="/analysis/yield"><Button variant="secondary">Yield Prediction & Analysis</Button></Link>
+          <Link to="/planning/irrigation"><Button variant="outline">Irrigation & Resource Optimization</Button></Link>
+          <Link to="/detection/pests"><Button variant="secondary">Pest & Disease Detection</Button></Link>
+          <Link to="/market-insights"><Button variant="outline">Market Insights</Button></Link>
+          <Link to="/admin"><Button variant="secondary">Admin Panel</Button></Link>
+        </div>
+      </section>
+
       <footer className="border-t">
         <div className="container py-8 text-sm text-muted-foreground">
           © {new Date().getFullYear()} Amaravati Smart Civic & Agri Hub • All rights reserved
         </div>
       </footer>
-    </main>
-  );
-};
 
 export default Index;
